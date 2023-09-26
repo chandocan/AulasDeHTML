@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esperança</title>
+   <h1>amor</h1>
+</head>
+<header>
+    <h4>Pagina princiapl</h4>
+</header>
+<body>
+    <!--fico negrito é italico combinado as duas tegs-->
+    <!--O 'ID' abaixo é um endentificador -->
+    <strong id="titulo"><i>Meu primeiro HTML</i></strong>
+    <!--tem tags que não tem fechamento nesse caso o input esta criando um campo de texto-->
+    <input type = "text"/>
+    <!--veja se da para aplica de forma especifica dentro do style.css depois-->
+    <Strong style="color:blue;">amigo e fé</Strong>
+    <!--Esse campo de texto vai ser torna um campo númerico-->
+    <input type="number"/>
+    <!--para usas cores-->
+    <input type="color"/>
+    <!--coloca o endereço de uma imagem que esta em outro site qualquer da internet-->
+    <!--da para copia o endereço de qualquer imagem da web com o botão direito do mouse-->
+    <!--<>img src="https://portaldrauziovarella.nyc3.digitaloceanspaces.com/wp-content/uploads/2014/07/30234355/201907_drauzio_coracao_39221301_maya2008_1000x563.jpg"/>-->
+    <!--da para colocar a dimenção da imagem com width-->
+    <!--<img width="100" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBISERcSEhQSEREXFxEXFxISERcXFxcSFxcYGBcXFxcbICwkGx0pHhcXJTYlKS4wMzMzGiI5PjkyPSwyMzABCwsLEA4QHRISHTIpIikyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMv/AABEIAK4BIgMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAABAgAEBQMGB//EADoQAAICAQIDBQUGBQQDAQAAAAABAhEDBCESMUEFUWFxgQYTIpGhFDJCYrHBUpLR8PEHgqLhJFNyI//EABoBAAMBAQEBAAAAAAAAAAAAAAABAgMEBQb/xAAxEQACAgECBAMGBQUAAAAAAAAAAQIRAyExBBITQVGR8AUicYGx8TIzYcHhFEJSodH/2gAMAwEAAhEDEQA/APo9EoagpATQlBoaiUIEgUFIZIKQDAhkSg0ABJQA0KxkSGoiQyQWAOEKiFIIhgSDQyQUgGLQyQyQUgAVINBSGoAFoNBolAAKDQaGoAEolDUGh0AlEoeiUFAJRKDRKEAtEoNEoAFoDQ7FYAc2KdGhWhCoUgaIAFKg0NQaKsQtDJEoNCAAUNQaABaDQ1EoAAkGg0FIQwUFBSCkAAQyREg0AwpBSIkMkAEoKREFAAKCkRDDAFEGDQxC0Sh6JQwBRKCSgELQKOgAGJQRqBQAKKxmBiYxWALASArQKHIACUQeiABRoJKJQEhCSg0AADRKGoBgoNBIAESCkFEAZEg0RDIABQQhoAANREggBEiBRBgRDEIhiYUhgEGBAkIMRCEIAEIQgAQVjMRpiY0KxWwysiMygUShqCojSELROEfh7xXHxsKAUg3AQNQKSRKGoNE2KhaDQ1EoLChaDQaDQWMWg0NQaGAtBGolAAEMSg0AECQgAQIAjAKGIiFICDIVDDEEASABCEIMRCEIAEIQgALIKQSIVALJCqI7IJodioayAYxBYpGLKaXNpCbGPwkF97HvXzCK4+IalbhBwjUEzKFoaiEACINkIABIQgAQhAWADEBYbGgIEiYbHYgUEaLBsMCBAxh0AEMkKEYghQthGIJAWROxgEhCABCBFYAFsSU0guKOOdRjFylLhiucm9kvFszk5JaFJKzJ9o+3FpcNxp5ZbQi+nfJruW3q0duxcs/s0XPIs81xcWRXTfE9k395Lla2dHlNVBa7tCEYtywxq3XPHH4pOvzN16o957uNVW1JVWyS5JJcjjxTnlk5J6LReHxOjJGMIqNa7s4LW195L5nVZ01cU2+5AWnilXPwZ0iq8PBLY2j1O79fHYzly9kVZTzS2iox9SjkxZL3lua8kn3/ADE4F3Gc8bluxxnWyMz7P+aXyCaPAiEdIrqEsIoaOkxCQhEAECAIAQFhEbE2MZBBFDjQEAQljAIReIDkKwoTVrI8c/dOKycMuBzTceOtuJJrazyXZHtfkx5vsnakY6bUJR4cqlH3eRPlxU2oN990/wAvJ+wUjC9q/ZvHr8XDJrHmi08ebgUpLvi+TcHfK+59BNvsUq7noUxj5Ni0PbnZqaxceXBDkoSjlhw/lxy+OK8IpGj2Z/qZ+HU4N1s54ZVv1vHN7fzAsq7j6b7an0gJ57Qe2OgzOlmWOX8OVPH/AMn8P1N+Mk1aaafJp2mvA1i09jNprcYlBCWSZPbWrcFGCdOVtvwXT1/Yz8GeuRne1GvX2ngT+6kn5/ef6nLQ6mz5nj5uWeT8NF8v5PVwY10kvXqj2Gj1HF8L3f7Fw8tpda4zTW+/LvXVHp4TTSa5NWet7O4rrQcZbr6djh4jD05X4jiOSSt7LvYmfNGEXKTUUuv9Dy3bHa8sj4IJqN7RXOT6cv0NuK4yHDrXV9l62XpWThwSyvTbxNPtLt/HiTUF7yXyj8+voed4dV2hOrrEnvKqhHyX4n9fFGt2f7PuVT1Fpc1jT3rxa5eSPR4sahFRilGK2SSpJeRy48WfiPezOo/4rTz7+b+SNpTx4tMer8Sj2X2Rh00ahH4mqlOW85eb7vBbGhYzFZ6UYqCqK0OVtydsjYrCQTASyDUCiGhikDRBDOdBF4icRNhQwvFQs8iSt7FbJqVW3zJlNIajZYWVDSktihHJy+Z0U1vJu+iRl1TTkLM8qq/T16nPFkUns1XcZOp1Ck6T8FH9f78Dtjy8CTW7/V95m81yK6ehrcQbK2knKW7uqO7mr32N4ztWZuNOhyWB89hZN1sU5UKrJPKk6Qqkc4QbfI7Rg0ZqTlqW0kGMWdYw7w4hmbxgqszbYV4GJ2z7LaPV3LLjSyf+3H8E/VraX+5M2kE0aTVMlNrY+Y9pf6cZoXLTZY5V/BkXBPy4l8Mn/KV+xtVrtBJ458WNK5PFkXFBrvj4eMWfV0V9XpMeaDhkhGcWns/HufNPxRz5eHtXB0/Xz9bG0M9aTVr18jzvY3trgzKs3/jy/ibvG/8Ad+H1+ZvR7V07qs+F3y//AGjv5bnhu3fYScYuWklxxVv3U38XlCXKXk682eIx5JPv25kvPlx6SRpHBjyaxZ7P2i93LJ73HNZPeZMvE1yTVKKXpZXw6nhR57Hla5nWWrPIy4+ZnbHQ9PpNeou3vVNb9U0/6m2/aqSjSxpS6NybS+m/zPn+PVbnWWqb5EY+phvklV/D90wlCE/xKz1Uu0cuoyKKuUnsopbL06ebPUdldkxxfFKp5f4ukfBFH2L0vBp3KUHDJKUt5xak47Vz6cz0h63B8Gvzpu5Px7fz9Oxw8Rmf5cdEvXkQhLIemcZKFoNg4haDBQE0FyFSXiZt+Aw2gtCSivELkTfiMhBbITzIdFee3MSWRJbuvMyZaqb6s5Tm+rZyPKbchd1GdSe3I4TnskVpTJLJ8XkjJystI75M1b+BX1epcIVfxPZf/T/orYmTKk99kk2/JbsxftMs+RUtm2k+5fil+iXkZOW7LSNjszFznJ99eXVl5d9eSOOOq4FyjXLv7i0sbrvFdKh9y1p8zUUjpFuT3F02F1yot44Uuh0405JGUmkzptXgLKVeIVISUrl82dEpaWjJI6wyd4eK2c+4nqVzuhUju3WwBFP1BKW6RTmiVE6iOe4JyOTf1JnkrYaiWHKlZIO9yply3JQXJbvyLMHQQy88qWy+oSjSOp5Htv2Q97myZsUowlkirjJOnk5N2uVqunO+89ZxhcjTJGGSNSCE5QdxPjM+zppSi1U4Spp93Jv++4z9bDgro+i/KvxPzPf+0mmrUTlVcUVvXSt/rZ5LVaN5Jcdb/dp9y2R4CyOM5Rk9m15af7o9Ze9FNdzP7Ow8fFKTqMVbPU+wujhk1fHVxhGU1atcacYp/VteRiLSOOF44byyS3f5VzPS/wCn0uHNOEVceBpu+sWt/nsbYJJ5k3ta8vv9CMumN14H0QFixZHzPe5rVnkUFsgHzJYWFBFZJuhIzV14f1M5SSdFJDXzJHkBc/QEZbeveTevmMMpUwcSrxJKhONEylT3GkC/F/IgnvCHP1UXRWlCKvY45NNjf4fqd5xOMpNHNKVGyVlaelhxJbr1FWmim+JvnyO6k95eiMztLVvHGU3a2r5mDn3LSMzt3UwjCaivjm1GKt3XOTLHs9pksSm4cMpdN9o/hX7+p5TT5Z6jU2+idRTvlzPedluoRvbuv6slOnTZbXc0NNjjBcl+5b5RuqVFHHlTyJXt4PmWc+aKTV70zeE48rfyMZRdh0ueL25f1LEZquZ57Q6uNyXW73fJUX56tRS3VsyxcWlDXsVPDroaqRylLnuuiKuTXxjHibVJNvyRS0+sTgpSauVV329/3N8nFx2REcT7mxF/5GlkpXsZstQoqm/Ez9f2tGMEr3bXyV3+xm+LUVS3H0Wzaw5G3bfojvjyJtyb8jyi7ahGMrnvytDz7fxqMafPoRDi3GtPuU8NnqZ54pWyj9uilKbaUVsmeb7V7cXCuF87/lSoycva7cI472u3472l8wnxM5u1sOOKK3Pb6LK3cnzk6NCeRL9X5HkNF2uvhV8ldvq2PrvaGHE6d/F07o7L62Z4uIcIuKWv3HPFzOz1kMtul6je9uXkeY03bcYY25P45U0u8i7ctXVNo2XH1Fevl+5D4fUv+0UVNQ7rfyVM8xkxrhcklb5I09Tr3NK9qX0Znce+3Loebny9TI5+P/Dqxx5YpFXJj4VGK+8lK34/5LfslJY5rzacvN7lVPjTr8yv1Rc0mP3a4bXT5kvI4rfW78i37yPc5NSkv1fhZWj2lC+a2pephrXPgafWjhCbUfX/ACdWT2pkbTic0eGj3PTfa43d2dftSujzMM1Ux1nbls+8iPtSaH/So356pFTDrVxNt83+/wD2UJZaW5Ulmamm+TvfxW5GTj8jkpeBUcEUqPUvOl12KmTtFRT4abvkYGXtCnz5gWW5OK5Om2Xk9p5H+HQmPDRW5qy7WkrUorwafUM9fy7zK4bk75c15d42WdO6/wAnJLi8z3lZt0oeBf8At6/iIZPFL+0Ej+oyeI+nE382pSV2qbr5FHtLWxjST36+C7jzOp1+Sk0+S2V95l6rVycbi275+b5s9DrSyaGKgkenl2tuq5XfoYnbvbSnxLZ1wqMXy2fxM5RyRcFK/iS+vceYzqUpy+nqPAnO7ewT0PU+zMYRTlL7zX/HuXmWO0O05uSUdum3d1M3ST4Y11pITM74ZdVdmerm2yr0NfS9qzhNO9klsHN21OUpt3T2T8Ophymr61VeLO+mhdyl03rwG4pK2CepoY9VtdpVtt1DqO0XOfN7UqMSWoSnKEeQZahJyd7Kmq6sOiLnL2v7VlJPGm6dL0Ex9oyWWFybjDdr+/Qypzbd+oiy7Sk3zdJGyxKq9akOZ6KfbE8k27q9q8DL1mtcpOabpPhS8bKcdRW/Xh+rM/UZWlwt9WzTHg1smWTQ0Mmpuo3bbtivUNz8EZuLJu2PinudDxUZ85o6nWPZXdHPFqW3bM7Pk+IaDofTXKHO2zY+0OMr6VsdsOVNuRkPLxRqztDLwxMnj0LUjZjqLa7kW9Nm3Te/gY2PJtS51Z20+d2n3HPOGmhopG/PM2n0Bb+Gtirgy8fLrzOjyri4e44ZRaNrL0YLEklvLr5iQna8W23ZSepbfCvmHUahJrh5VRnyt/Edl55VTt7nSGouPg+RkxnclHm3vJlmGVcSXKKe1/qS8dD5jSllpcqHwZdjPyZOL0OWXVqC57r6mag3sOzZxzuW64nvsU9Zkc5pWm0uSey7/wBitHWycdtn3L9xJZOCDfOTtIqMGhWLnz/Fz3TW9llan41vzSMTFPi47e6uy373ini4etJm08daEqVm5HMlKuZz1eprzTdplPUZuGa6Lr+xX1N5MkY2+F7y7uFGKhb12Ksue/l3kO/wdy+QTO/0LMCWRT4Yvm1y8ClnfBJJ7p38zi8zUoy6tI6a1cXC/A9aMeV12OVuxnk4VXV7+gmmxcUpcXmLj+JSb5xVIENQ4Y75lU6pbgFZqt9ORyWob2a58vEr6jI3VbJ9AXUb6myhoZtmhGVt2+70Os9Za27q/YyseR1XexpT4U6E8Ouo+cR5ODI97fX15jRnc+Hp18jNyy+P5HfRSbbk+d16HTKFRv8AQyUtaLWpy033bL/o4PdR3K+pyt35izysqMKSE5HSef466JHLJK3ZVc+bHjPY3UKM+azvhe252g+pVg+R2yOkTJDRFvIGrnTSOul5o46/eYk/fopr3R8M65nWWf6Gfx7naDscoCTNXTZLRbjlSdLuM3BImLK3NnJKF2bJ0b2m1HDCkdI5OJcX4r+hmKdbIt48vTuOOcO5qpHZZLnL5DZmq8VyM33lzfqHLnbJ6bvQfMXtNm+NXvtv5Hf33E7ffsY2nyviZf07tN+f0FkxpOwizRhOufLmZuqzceTujuNq9Q44m1zdL5lLTJtbuwxY/wC5/AJS7GlhzW1v4vyO2bWJpvrtFeb2MjNnaVL8XN+B20T45JvlHp4jliX4mCl2LWljXEu9OzpKcYY1Pk4Xa8jm8m7ro6+pT7Xnww4V1kvqyVDnmk+426Q+fW/DGU7blVLwvr6FnT6yfvW6uGyXhtzMTLk466U6Xka2LKoRe173fWzTJjSWwoy1NT7b4kMe0965hOfoRK5mf//Z"/>-->
+
+    <!--para fazer uma sitação de texto ele da um espaçamento-->
+<blockquote>
+    <!--colocando em negrito uma pavra especifica 'u' subliha a palavra -->
+    amor verdadeiro é sem palavras você vai <strong><u>Realizar</u></strong> seu sonho Alfredo
+</blockquote>
+<!--marcador de texto-->
+<p>testando o marcado de texto ne <mark>alfredo</mark> para ver como fica</p>
+<!--para fazer uma potencia-->
+<p>usando elevando algo <Sup>R</Sup> como potencia</p>
+
+
+<!--lista orden ada essa tag precesa das tags filhas que são 'li'-->
+<!--dentro da lista você pode colocar outra lista-->
+<!--da para colocar uma lista dentro de outra-->
+
+<ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>
+        <ol>
+            <li>Item3.1</li>
+            <li>Item 3.2</li>
+            <li>Item 3.3</li>
+        </ol>
+    </li>
+</ol>
+
+<!--lista não ordenada vai troca o pelo u seriam marcadores como bolinhas-->
+<!--isso é usada para menu-->
+
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>
+        <ul>
+            <li>Item3.1</li>
+            <li>Item 3.2</li>
+            <li>Item 3.3</li>
+        </ul>
+    </li>
+</ul>
+
+<!--podemos comprtinha link com ancora isso é usando a letra 'a' e usando href ancorando em algum lugar-->
+
+<h1>Meu primeiro site</h1>
+<ul>
+    <li><a href="http://dio.me">Dio.me</a></li>
+    <!--para abri em outra aba _self abre na mesma aba se usar _blank abre numa nova aba o site da para abrie numa nova aba segurando o chift-->
+    <p>abaixo vai abrie numa nova aba</p>
+    <!--usando o atributo title vai cria um balão zinho quando passa o mouse em cima-->
+    <li><a href="http://dio.me" title="Clique aqui e confira" target="_blank">Dio.me</a></li>
+    <h2>Para ir para outro site</h2>
+    <!--praticamente o link faz você navega dentro de seu site-->
+    <a href="about.html" title="Clique aqui">Sobre a empresa</a>
+</ul>
+</body>
+</html>
