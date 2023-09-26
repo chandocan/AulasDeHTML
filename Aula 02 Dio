@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha do html</title>
+</head>
+<body>
+    <!--Estilo intalico-->
+    <i>Programa</i> o seu fulturo global agora!<br>
+    <!--b deixa em negrito-->
+    <b>Programa</b> o seu fulturo global agora!<br>
+    <!--posso sumblia-->
+    <u>Programa</u> o seu fulturo global agora!<br>
+    <!--posso mescla as mesmas esta intalico com negrito-->
+    <b><i>Programa</i></b> o seu fulturo é agora<br>
+    <!--posso marca texto-->
+    <mark>Programa</mark> o seu fulturo é agora<br>
+    <!--como se tivesse colocando um expoente em uma letra ou palavra-->
+    Programa<sup>*</sup> o seu fulturo é agora<br>
+    <!--para colocar as formas de quimico -->
+    Programa o seu fulturo é agora ! 10<sub>2<sub><br>
+    <!--para explicação ou sitação -->
+    <blockquote>Programa<sub>*</sub> o seu fulturo é agora</blockquote>
+
+    <!--qual a diferença entre b e strong strong para da mais enfase no texto se quiser deixar só em negrito b
+    o strong os leitores de tela alguns usam ele para dar mais firmesa na palavra   
+    -->
+
+</body>
+</html>
