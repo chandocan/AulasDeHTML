@@ -1,0 +1,80 @@
+<!--
+Em resumo, abaixo temo um cabelho HTML contém informações essenciais 
+para configurar a página da web, como a codificação de caracteres, 
+as configurações de compatibilidade do navegador, metadados, título da 
+página e uma referência a uma folha de estilo externa.
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+    <title>SapoDev01</title>
+    <!--apontando para o arquivo style.css-->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<!--
+    aqui abaixo esta o corpo do html que nesse exemplo conte uma div que é 
+    um conteiner e um script do javaScrip com uma função validartelaLogin()
+-->
+
+<body>
+    <div class="main-container">
+        <!--colocando uma logo-->    
+        <!--<div calss="logo"><img src="images/SapoDev_02.png"/></div>-->
+        <div class="logo"><img src="images/SapoDev_02.png" alt="Logo SapoDev"></div>
+
+        <div class="form-container">
+            <h1>Cadastramento</h1>
+            <form>
+                <label for="username">Conta:</label>
+                <input type="text" id="username" name="username" required><br>
+
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required><br>
+
+                <button type="button" onclick="validateLogin()">Entrar</button>
+                <p id="login-error" style="color: rgb(173, 21, 21); display: none;">Usuário ou senha incorretos.</p>
+                
+            </form>
+            <script>
+                function validateLogin() {
+                    const username = document.getElementById("username").value;
+                    const password = document.getElementById("password").value;
+
+                    // Verifique as credenciais (isso é apenas um exemplo, você deve usar um servidor real)
+                    if (username === "alfredo" && password === "123") {
+                        alert("Login bem-sucedido!");
+                        // Aqui você pode redirecionar o usuário para outra página
+                    } else {
+                        document.getElementById("login-error").style.display = "block";
+                    }
+                }
+            </script>
+        </div>
+            <div class="welcome-message">
+                <p>Aumente os negócios com nossos produtos. Sabemos como é difícil para profissionais liberais,
+                    empreendedores individuais, pequenas e médias empresas divulgarem serviços e conquistarem novos
+                    clientes.</p>
+            </div>
+    
+        <div class="entra">Entra</div>
+        <!--criando submenu-->
+        <div class="submenu">
+            <ul>
+                <li><a href="#">SapoDev</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Empresas</a></li>
+            </ul>
+    
+        </div>
+        <div>
+            <h2 class="left-corner">Nós somos</h2>
+        </div>
+    </div>
+</body>
+
+</html>
