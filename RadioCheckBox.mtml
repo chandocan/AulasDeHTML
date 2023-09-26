@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario parte 02</title>
+</head>
+<!--usando checkbox e radio-->
+<body>
+    <!--geralmente você não pode manda essa marcações uma por uma para o servidor-->
+    <!--Nesse caso temos que fazer uma variável que tenha mais de um valor-->
+    <!--A palavra 'opcional' vai servi como um 'id' para o servidor pois ele vai mandar os value especifico  -->
+    <form method="post"> <!--poderia ser method get mais poderia da erro no servidor pois iria como variável para uma lista onde no servidor na lista de lá só ficaria a utima variável  -->
+        <!--tem que chegar no servidor como uma lista-->
+        <h3>Você selecionou: Pizza de Calabresa</h3>
+        <p>Quais Opções você deseja?</p>
+        <!--o value é o que vai ser mandado para o servidor-->
+        <!--quando você coloca [ ] mostra para o servidor que o id nesse caso opcional é uma lista-->
+        <input type="checkbox" name="opcional[]" value="queijo">+ queijo <br>
+        <!--Se você quiser desabilitar uma opção você pode usar disabled antes da variável name-->
+        <!--<input type="checkbox" disabled name="opcional[]" value="calabresa">+ calabresa <br>-->
+        <!--isso ajuda a você não ter que refazer código-->
+        <input type="checkbox" disabled name="opcional[]" value="calabresa">+ calabresa <br>
+        <input type="checkbox" name="opcional[]" value="cebola">+ cebola <br>
+        <input type="checkbox" name="opcional[]" value="azeitona">+ azeitona <br>
+        <p>Borda recheada</p>
+        <!--se deixa a vairvel nome sem vazia você pode selecionar mais de um valor mas depende do seu back-end-->
+        <input type="radio" name="borda" value="sim">Sim<br>
+        <input type="radio" name="borda" value="nao">Não<br>
+        <p>Bebidas</p>
+        <input type="radio" name="bebida" value="suco">suco<br>
+        <input type="radio" name="bebida" value="refrigerante">Refrigerante<br>
+        <input type="radio" name="bebida" value="agua">Água<br>
+        <input type="radio" name="bebida" value="nenhum">Nenhum<br> <br> <!--da para pular linhas seguidas levado os intes mais para baixo da pagina com a repetição do br br-->
+
+        <button type="submit">Enviar pedido</button>
+    </form><br>
+<!--usando os tipos de botões-->
+    <form onsubmit="" method="get">
+        <!--dentro da lebel os espaços também contam-->
+        <label>Nome *</label><input type="text" name="name" required><br>
+        <label>Idade *</label><input type="number" name="age" required><br>
+        <!--não esquecer de fazer a validação no back-end dessas informações-->
+        <!--pois mesmo com o campo desabilitado ou mesmo a senha pode ser trocada no console do navegador apertando f12 -->
+        <label>Password *</label><input type="password" name="password" required><br>
+        <!--botão para alerta-->
+        <button type="button" onmouseover="alert('Chique aqui')">Clicavel</button><br></br>
+        <!--o reset serve para limpa o formulario que ele esta incluido-->
+        <button type="reset">Limpa</button>
+        <!--O submit invia o formulario-->
+        <button type="submit">Enviar</button>
+
+
+
+    </form><br>
+<!--lectebox 'role' e uma lista de o usuário com uma pre escolha -->
+    <form onsubmit="" method="get">
+        <label>Nome</label><input type="" name="name"><br>
+        <label>Cargo</label>
+        <!--<select name="role multiple"> com essa opção você pode selecionar mais de uma opção -->
+        <!--pode existir uma falha de segurança no back-ende se o usuário troca o envio-->
+        <select name="role" >
+            <!--value e o que vai ser enviado para o back-en-->
+            <option value="">Selecione o cargo</option>
+            <option value="Administrativo">Administrativo</option>
+            <option value="gerente">Gerente</option>
+            <option value="diretor">Diretor</option>
+            <option value="presidente">Presidente</option>
+        </select>
+
+        <br>
+        <label>Assunto</label><input type="text" name="subject"><br>
+        <labe>Mensagem</labe>
+        <!--rows de linhas 'vertical' cols colunas 'horizontal'-->
+        <textarea rows="10" cols="70" name="message"></textarea>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpa</button>
+    </form>
+
+</body>
+</html>
+ 
