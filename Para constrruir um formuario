@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cadastro</title>
+</head>
+<!--AQUI ESTA PARA CRIAR UM FORMULARIO TIPO A COSNTRUÇÃO DAS ENTRADAS-->
+<body>
+    <!--não use get no método por motivo de segurança se for usa a ação de envio dos campos do formulario-->
+    <!--o targate é para abrie uma nova aba-->
+   <!-- <form name="signup" target="_blank" method="post" action="meusitez.com.br">-->
+
+    <!--o autocomplete é para armazena a senha e limpa os campos de texto-->
+    <!-- <form name="signup" autocomplete="on" method="post" action="meusitez.com.br"> -->
+
+        <!--Para usa o javaScrip de usar onsubmit ai posso usar aparentimente um método do javaScrip-->
+        <!--Usado para poder validar um formulario mostra um alerta usado para cansacelar o envio com a função alerta-->
+        <form name="signup" onsubmit="alert('enviei o formulario')" method="post" action="meusitez.com.br">    
+
+  
+        Nome: <input type="text" name="nome"/><br>
+        Idade: <input type="number" name="nome"/><br>
+        senha: <input type="password" name="nome"/><br>
+        <!--Ver esse submit-->
+       
+        <!--campo pode ter restrição de numero se você quiser exemplo minimo de número e max fica como se fosse um intervalo-->
+        <label>Campo teste 01 com restrição</label><input type="number" min="0" max="10"/>
+        <!--Uma coisa intereçante é se vc não fechar a tag do input apresse o codigo das coisas que estão por trás dele tipo basta não colocar o final da tag />-->
+        <label>get antes pode ser qualquer nome</label><input type="button" value="Enviar 02"/><br>
+        <!--no caso acima eu usei o input com o tipo botão nada mais-->
+        <!--outro exemplo aqui-->
+        <label>botão</label><input type="button" value="Enviar 03"/><br>
+        <!--Existe o range você pode colocar um valor minimo ou maximo para escalar-->
+        <!--no caso vai iniciar no valor 45 que pode ser alterado pelo usuário-->
+        <label>range:</label><input type="range" min="0" max="100" value="45" > 
+        <!--tem um botão de cor chamado color que você cria com o input-->
+        <label>BotãoDeCores</label><input type="color"/><br>
+        <!--tipo email-->
+        <label>E-mail</label><input type="email"/><br>
+        <label>Url</label><input type="url"/><br>
+        <label>Date</label><input type="date" /><br>
+        <!--obs no farefox o week não funciona por enquanto exemplo pode ser a semmana 39 de determinado ano-->
+        <label>semana</label><input type="week"/><br>
+        <label>mês</label><input type="month"/><br>
+        <label>Checkbox</label><input type="checkbox"/><br>
+        <!--da para bota 2 checkbox do lado do outro-->
+        <label>Checkbox</label><input type="checkbox"/><input type="checkbox"/><br>
+        <label>Radio</label><input type="radio"/><br>
+        <!--É um campo invisevel que o usuário no formulario não ver só quem sabe deste é o adm do site-->
+        <label>Hiddn:</label><input type="hidden"/><br>
+        <!--para selecionar mais de um arquivo usei como parametro multiple poderia usar sem este para selecionar só um arquivo-->
+        <label>file</label><input type="file" multiple/><br>
+        <!--Este outro só funciona no chrome-->
+        <label>Search</label><input tye="search"/><br>
+        <button type="submit">Enviar</button><br>
+
+    </form>
+</body>
+</html>
