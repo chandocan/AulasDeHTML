@@ -1,0 +1,10 @@
+<!--sub pagina do site -->
+<head>
+    <title>sobre a minha empresa</title>   
+</head>
+<body>
+    <h1>Sobre meu site</h1>
+    <!--cuidado nos espaço quando for escrever para voltar para o site anterior-->
+    <a href="index.html">< Voltar</a>
+</body>
+</html>
