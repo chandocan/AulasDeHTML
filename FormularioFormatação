@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha do html</title>
+
+</head>
+
+<style>
+    
+    .row{
+        margin: 20px;
+    }
+    .label{
+        width: 100px;
+        text-align: right;
+        display: inline-block;
+        padding-right: 5px;
+    }
+    fieldset{
+        margin: 10px; /*espaçamento*/
+        border-radius: 10px; /*bords aredondadas*/
+        border-color: brown;
+        background-color: burlywood;
+    }
+
+</style>
+
+<body>
+    <p>amor amor</p>
+    <!--Estilo italico-->
+    <i>Programa</i> o seu fulturo global agora!<br>
+    <!--b deixa em negrito-->
+    <b>Programa</b> o seu fulturo global agora!<br>
+    <!--posso sumblia-->
+    <u>Programa</u> o seu fulturo global agora!<br>
+    <!--posso mescla as mesmas esta intalico com negrito-->
+    <b><i>Programa</i></b> o seu fulturo é agora
+    <!--posso marca texto-->
+    <p><mark>Programa</mark> o seu fulturo é agora</p>
+    <!--como se tivesse colocando um expoente em uma letra ou palavra-->
+    <p>Programa<sup>*</sup>o seu fulturo é agora</p>
+    <!--para colocar as formas de quimico -->
+    <p>Programa o seu fulturo é agora ! 10<sub>2<sub></sub></p>
+    <!--para explicação ou sitação rodape de algo ou sitação de um texto-->
+    <blockquote>Programa<sub>*************</sub> o seu fulturo é agora</blockquote>
+
+    <!--qual a diferença entre b e strong strong para da mais enfase no texto se quiser deixar só em negrito b
+    o strong os leitores de tela alguns usam ele para dar mais firmesa na palavra   
+    -->
+    <!--cria um texto aleatorio-->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur vel, minima vero porro fuga quae quibusdam!
+        Laborum quam neque, voluptate cum iusto consequuntur, dolores quaerat ab, libero sit facilis accusantium!</p>
+    <!--USANDO A TAG FONT mas o mais indicado é usar atraves do css-->
+    <p>
+        <font color="red" face="Arial">Programa</font> o seu fulturo é agora !
+    </p>
+
+
+    <h1>Formulario</h1>
+    <fieldset>
+        <!--vai cria um contorno-->
+        <legend>Dados Pessoais</legend>
+        <div class="row">
+            <label>Nome :</label><input type="txt" />
+            <label>E-mail :</label><input type="txt" />
+        </div>
+
+        <div class="row">
+            <label>Profissão :</label><input type="text" />
+            <label>Empresa :</label><input type="text" />
+
+        </div>
+
+    </fieldset>
+
+    <fieldset>
+        <!--o legend coloca um nome nas bordas-->
+        <legend>Endereço :</legend>
+        <div class="row">
+            <label>Endereço :</label><input type="text" />
+            <label>Número :</label><input style="width: 30px" type="text" width="20px" />
+        </div>
+
+        <div class="row">
+            <label>Bairro :</label><input type="text" />
+        </div>
+
+        <div class="row">
+            <label>Cidade/UF :</label><input type="text" />
+        </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações de Contato</legend>
+            <div class="row">
+                <label>Celular :</label><input type="text" />
+                <label>Whatsapp :</label><input typr="text" />
+            </div>
+            <div>
+                <label>Linkedin :</label><input type="text" />
+            </div>
+        </fieldset>
+
+        <div class="row">
+            <button type="reset">reset</button>
+            <button type="button">Enviar formulário</button>
+        </div>
+
+
+
+</body>
+
+</html>
