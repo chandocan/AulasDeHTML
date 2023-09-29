@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha do html</title>
+
+</head>
+
+<style>
+    .row {
+        margin: 20px;
+    }
+
+    .label {
+        width: 100px;
+        text-align: right;
+        display: inline-block;
+        padding-right: 5px;
+    }
+
+    fieldset {
+        margin: 10px;
+        /*espaçamento*/
+        border-radius: 10px;
+        /*bords aredondadas*/
+        border-color: brown;
+        background-color: burlywood;
+    }
+    /*devemos colocar o nome do atributo entre cochetes*/
+    [title]{
+        color: red;
+    }
+
+</style>
+
+<body>
+    <p>amor amor</p>
+    <!--Estilo italico-->
+    <i>Programa</i> o seu fulturo global agora!<br>
+    <!--b deixa em negrito-->
+    <b>Programa</b> o seu fulturo global agora!<br>
+    <!--posso sumblia-->
+    <u>Programa</u> o seu fulturo global agora!<br>
+    <!--posso mescla as mesmas esta intalico com negrito-->
+    <b><i>Programa</i></b> o seu fulturo é agora
+    <!--posso marca texto-->
+    <p><mark>Programa</mark> o seu fulturo é agora</p>
+    <!--como se tivesse colocando um expoente em uma letra ou palavra-->
+    <p>Programa<sup>*</sup>o seu fulturo é agora</p>
+    <!--para colocar as formas de quimico -->
+    <p>Programa o seu fulturo é agora ! 10<sub>2<sub></sub></p>
+    <!--para explicação ou sitação rodape de algo ou sitação de um texto-->
+    <blockquote>Programa<sub>*************</sub> o seu fulturo é agora</blockquote>
+
+    <!--qual a diferença entre b e strong strong para da mais enfase no texto se quiser deixar só em negrito b
+    o strong os leitores de tela alguns usam ele para dar mais firmesa na palavra   
+    -->
+    <!--cria um texto aleatorio-->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur vel, minima vero porro fuga quae quibusdam!
+        Laborum quam neque, voluptate cum iusto consequuntur, dolores quaerat ab, libero sit facilis accusantium!</p>
+    <!--USANDO A TAG FONT mas o mais indicado é usar atraves do css-->
+    <p>
+        <font color="red" face="Arial">Programa</font> o seu fulturo é agora !
+    </p>
+
+
+    <h1>Formulario</h1>
+    <fieldset>
+        <!--vai cria um contorno-->
+        <legend>Dados Pessoais</legend>
+        <div class="row">
+            <label>Nome :</label><input type="txt" />
+            <label>E-mail :</label><input type="txt" />
+        </div>
+
+        <div class="row">
+            <label>Profissão :</label><input type="text" />
+            <label>Empresa :</label><input type="text" />
+
+        </div>
+
+    </fieldset>
+
+    <fieldset>
+        <!--o legend coloca um nome nas bordas-->
+        <legend>Endereço :</legend>
+        <div class="row">
+            <label>Endereço :</label><input type="text" />
+            <label>Número :</label><input style="width: 30px" type="text" width="20px" />
+        </div>
+
+        <div class="row">
+            <label>Bairro :</label><input type="text" />
+        </div>
+
+        <div class="row">
+            <label>Cidade/UF :</label><input type="text" />
+        </div>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Informações de Contato</legend>
+        <div class="row">
+            <label>Celular :</label><input type="text" />
+            <label>Whatsapp :</label><input typr="text" />
+        </div>
+        <div>
+            <label>Linkedin :</label><input type="text" />
+        </div>
+    </fieldset>
+
+    <div class="row">
+        <button type="reset">reset</button>
+        <button type="button">Enviar formulário</button>
+    </div>
+
+    <video controls autoplay width="400" height="250">
+        <!--<source src="andando de bikeComFilha2023-09-10 at 16.31.39.mp4">-->
+    </video>
+
+
+    <video controls autoplay width="400" height="250">
+        <source src="">
+    </video>
+
+    <!--pegando conteudo de outra pagina-->
+    <!--esse recurso pode ser colocar do google maps para localizar algo clicando no link de compartilhamento e incorpora map e escolher as dimenções-->
+    <!--Atravaz desse recurso da para colocar crtes propagandas em certos locais isto é propagandas individuais -->
+    <!--pode bota os videos ou site de seu produto onde você quiser-->
+    <h1> Emberds vs Iframe</h1>
+    <!--<iframe src="http://dio.me" width="500" height="400"> -->
+    <h2>A amores</h2>
+    </iframe>
+    <!--Obs o google já cria um iframe direto-->
+    <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1572.6384784151053!2d-37.128215257770165!3d-7.893180098200119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a888869bec7185%3A0x8f5f83548056563d!2sMonteiro%2C%20PB%2C%2058500-000!5e0!3m2!1spt-BR!2sbr!4v1695907126539!5m2!1spt-BR!2sbr" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+
+    <h3>Pegando imagens da net</h3>
+
+    <img width="599" height="540"
+        src="https://scontent.frec42-1.fna.fbcdn.net/v/t1.6435-9/85032771_2755240624558101_1070137753733169152_n.jpg?stp=dst-jpg_p960x960&_nc_cat=108&ccb=1-7&_nc_sid=e3f864&_nc_ohc=Dmx3x80ceA8AX-WGeJg&_nc_ht=scontent.frec42-1.fna&oh=00_AfC-iYaIFJEBSaWV8erl7iSubi8nhYUlyQG3cNHNv_V6Fg&oe=653E7C44"
+        data-ll-status="loaded" class="entered lazyloaded">
+</body>
+<!--links-->
+<p>lincando aqui</p>
+<div>
+    <ul>
+        <li>
+            <a title="instagram" href="https://www.youtube.com">
+                youtube
+            </a>
+        </li>
+    </ul>
+</div>
+</body>
+
+</html>
