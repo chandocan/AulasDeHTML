@@ -1,134 +1,81 @@
-<!--
-Em resumo, abaixo temo um cabelho HTML contém informações essenciais 
-para configurar a página da web, como a codificação de caracteres, 
-as configurações de compatibilidade do navegador, metadados, título da 
-página e uma referência a uma folha de estilo externa.
-no git
--->
-
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
-    <title>SapoDev01TesteGit</title>
-    <!--apontando para o arquivo style.css-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css" />
+    <title>Exemplo com Imagem de Fundo</title>
 </head>
-
 <body>
-    <header>
-        <div class="logo"><img src="image/SapoDev_02.png" alt="Logo SapoDev"></div>
-        <div class="submenu">
-            <ul>
-                <li><a href="#">SapoDev</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Empresas</a></li>
-            </ul>
+    <div class="exemplo">
+        <!-- Conteúdo da sua página aqui -->
+        <h1>Já tomou todinho</h1>
+    </div>
 
-        </div>
+    <div class="exemplo02">
+        <h2> Já tomou todinho 02</h2>
+    </div>
 
-    </header>
+    <div class="exemplo03">
+        <h3> O senhor é meu pastor nada me faltará</h3>
+    </div>
 
-    <main>
-       <p style="position: absolute; top: 120px; left: 80px">Cadastro</p>
-        <!--foi criando duas classe com o nome coluna é linha-->
-        <section class="coluna linha">
-            
-            <div class="item01">1
-                <form style="top: 10px;">
-                    
-                    <label for="username">Conta:</label>
-                    <!--<input type="text" id="username" name="username" required><br>-->
-                    <input type="text" id="username" name="username" required style="width: 200px;"><br>
-                    <label for="password">Senha:</label>
-                    <input type="password" id="password" name="password" required style="width: 200px;"><br>
+    <div class="exemplo04">
+        <h4>
+            Não a Deus tão grande como nosso Deus
+        </h4>
+    </div>
 
-                    <button type="button" onclick="validateLogin()">Entrar</button>
-                    <p id="login-error" style="color: rgb(173, 21, 21); display: none;">Usuário ou senha incorretos.</p>
+    <div class="exemplo05">
+        <h5>
+            porque ele vive posso crer no amanhã
+        </h5>
+    </div>
 
-                </form>
-            </div>
-    
-            <div style="position: absolute; top: 100px; left: 490px;" class="item02">2
-                <p>Aumente os negócios com nossos produtos. Sabemos como é difícil para profissionais liberais,
-                    empreendedores individuais, pequenas e médias empresas divulgarem serviços e conquistarem novos
-                    clientes.
-                </p>
-            </div>
-            <!--<section style="position: absolute; top: 530px; left: 80px;"class="coluna02 linha02">-->
-            <section style="position: absolute; top: 420px; left: 80px;" class="coluna02 linha02">
-                <div class="item">3
-                    <h1>Simples</h1>
-                    <p style="color: aliceblue;">Cadastre-se gratuitamente já visualize as oportinudades</p>
+    <div class="exemplo06">
+        <h6>
+            repetindo cores
+        </h6>
+    </div>
 
-                    <button type="button" onclick="printandoAlgo()">Grátis</button>
-                </div>
-                <div class="item">4
-                    <h2>Eficientes</h2>
-                    <p style="color: aliceblue;">Invista em diversas ações de marketing para trazer as melhores
-                        oportunidades de negócios</p>
+    <div class="exemplo07">
+        <p>usando código de um site</p>
+    </div>
 
-                    <button type="button" onclick="printandoAlgo()">exemplos</button>
-                </div>
-                <div class="item">5
-                    <h3>Acessíveis</h3>
-                    <p style="color: aliceblue;">você somente investe para ter acesso aos dados e oportunidades de
-                        negócios</p>
-                    <button type="button" onclick="printandoAlgo()">aplicativos</button>
+    <div class="exemplo08">
+        <p> uma imagem em cima da outra</p>
+    </div>
+<!--imagem ao lado da outra-->
+    <div class="exemplo09">
+        <div class="imagem1"></div>
+        <div class="imagem2"></div>
+    </div>
 
-                </div>
-            </section>
+    <!--log em cima de uma imagem-->
+    <div class="container">
+        <!--<img src="imagem-de-fundo.jpg" alt="Imagem de Fundo" class="imagem-de-fundo">-->
+        <!--<img src="logo.png" alt="Logo" class="logo">-->
 
-            <h2 style="position: absolute; top: 350px; left: 610px;">NOS SOMOS</h2>
+        <img src="../img/mao.jpg" alt="Imagem de Fundo" class="imagem-de-fundo">
+        <img src="../img/flores02.jpeg" alt="Logo" class="logo">
+        
+    </div>
 
-            <script>
-                function validateLogin() {
-                    const username = document.getElementById("username").value;
-                    const password = document.getElementById("password").value;
+    <div class="exemplo10">
+        <p>exemplo 10 aqui</p>
+    </div>
 
-                    // Verifique as credenciais (isso é apenas um exemplo, você deve usar um servidor real)
-                    if (username === "alfredo" && password === "123") {
-                        alert("Login bem-sucedido!");
-                        // Aqui você pode redirecionar o usuário para outra página
-                    } else {
-                        document.getElementById("login-error").style.display = "block";
-                    }
-                }
-                function printandoAlgo(){
-                   // Abre uma janela pop-up com o texto "Olá, você Alfredo"
-                    const popupWindow = window.open('', '_blank', 'width=300,height=200');
-                    popupWindow.document.write('<h1>Olá, você Alfredo</h1>');
-                }
-            </script>
+    <div class="exemplo11">
+        <p>exemplo 11</p>
+    </div>
 
-    </main>
-    <!--local do rodape-->
-    <footer>
-        <section class="coluna03 linha03">
-            <div class="item">6
-                <h4>Sobre</h4>
-                <p style="color:black">sapoDev<br> como funciona <br>a empresa</p>
-            </div>
-            <div class="item">7
-                <h5>Link do site</h5>
-                <p style="color:black">página inicial<br> cadastro do fornecedor<br> lista de empresas<br> gerenciador</p>
-            </div>
-            <div class="item">8
-                <h6>Informações</h6>
-                <p style="color:black">perguntas frequentes<br> politica de contato garantido<br> termos e condições<br> ideias</p>
-            </div>
-            <div class="item">9
-                <h7>Gratuito</h7>
-                <p style="color:black">fale com nosco</p>
-            </div>
-        </section>
+    <div class="exemplo12">
+        <p>exemplo 12</p>
+    </div>
 
-    </footer>
+    <div class="exemplo13">
+        <p>exemplo 13</p>
+    </div>
 
 </body>
-
 </html>
