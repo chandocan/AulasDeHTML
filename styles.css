@@ -1,0 +1,194 @@
+/* nesse casos temos background para as divs */
+
+.exemplo {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/mao.jpg'); /* Caminho para a imagem de fundo */
+    background-size: cover; /* Redimensiona a imagem para cobrir todo o elemento .exemplo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    color: rgb(216, 22, 22); 
+}
+
+.exemplo02{
+    width: 300px;
+    height: 300px;
+    background-color: crimson;
+    background-image: url('../img/mao.jpg');
+}
+/*
+.exemplo03{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: blueviolet;
+    background-image: url('../img/flores02.jpeg');
+}
+*/
+
+.exemplo03{
+    display: flex;
+    
+    
+    flex-direction: column;
+    justify-content: center; /* Centralize verticalmente */
+    align-items: center; /* Centralize horizontalmente */
+    text-align: center; /* Centralize o texto */
+    /*height: 100%; /* Garanta que a div ocupe a altura total */
+    height: 100vh;
+    background-image: url('../img/flores02.jpeg');
+    background-size: cover; 
+    background-position: center;
+}
+
+/*colocando varias cores no fundo*/
+.exemplo04{
+    width: 300px;
+    height: 300px;
+    background-color: palevioletred;
+    background-image: linear-gradient(green, red, purple);
+}
+
+.exemplo05{
+    width: 300px;
+    height: 300px;
+    background-color: palevioletred;
+    background-image: radial-gradient(green, red, purple);
+}
+/*alguns sites tem esse efeitos abaixo com o nome para você buscar patterns Gallery vai da alguns padrões de cores em modo repetitivo*/
+.exemplo06{
+    width: 300px;
+    height: 300px;
+    background-image: repeating-linear-gradient(to top, green 0 20px, red 20px 40px);
+}
+
+/*Aqui esta um site para patterns Gallery https://projects.verou.me/css3patterns/*/
+
+.exemplo07{
+    width: 300px;
+    height: 300px;
+
+    background-image:
+    radial-gradient(closest-side, transparent 0%, transparent 75%, #B6CC66 76%, #B6CC66 85%, #EDFFDB 86%, #EDFFDB 94%, #FFFFFF 95%, #FFFFFF 103%, #D9E6A7 104%, #D9E6A7 112%, #798B3C 113%, #798B3C 121%, #FFFFFF 122%, #FFFFFF 130%, #E0EAD7 131%, #E0EAD7 140%),
+    radial-gradient(closest-side, transparent 0%, transparent 75%, #B6CC66 76%, #B6CC66 85%, #EDFFDB 86%, #EDFFDB 94%, #FFFFFF 95%, #FFFFFF 103%, #D9E6A7 104%, #D9E6A7 112%, #798B3C 113%, #798B3C 121%, #FFFFFF 122%, #FFFFFF 130%, #E0EAD7 131%, #E0EAD7 140%);
+    background-size: 110px 110px;
+    background-color: #C8D3A7;
+    background-position: 0 0, 55px 55px;
+}
+
+/*uma imagem em cima da outra basta só dividir com virgular*/
+.exemplo08{
+    width: 300px;
+    height: 300px;
+    background-image: url( '../img/flores02.jpeg'), url('../img/mao.jpg') ;
+        /*redimencionado imagem*/
+    background-size: 50% auto, cover; /* Redimensione as imagens individualmente */
+    justify-content: center; /* Centralize verticalmente */
+    align-items: center;
+    display: flex; /* Use flex para centralizar o conteúdo verticalmente */
+    
+}
+
+.exemplo09{
+    width: 900px;
+    height: 300px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center; /* Centralize horizontalmente */
+    align-items: center; /* Centralize verticalmente */
+}
+
+.imagem1 {
+    width: 150px; /* Defina o tamanho da primeira imagem */
+    height: 150px;
+    background-image: url('../img/flores02.jpeg'); /* Imagem de fundo 1 */
+    background-size: cover; /* Redimensione a imagem para cobrir */
+    background-repeat: no-repeat; /* Evite a repetição da imagem */
+}
+
+.imagem2 {
+    width: 150px; /* Defina o tamanho da segunda imagem */
+    height: 150px;
+    background-image: url('../img/mao.jpg'); /* Imagem de fundo 2 */
+    background-size: cover; /* Redimensione a imagem para cobrir */
+    background-repeat: no-repeat; /* Evite a repetição da imagem */
+}
+
+/*
+#cover {
+    background-size: cover; 
+}
+*/
+
+
+/*Colocando uma logo em cima da imagem*/
+.container {
+    position: relative; /* Define o container como referência para o posicionamento absoluto dos elementos internos */
+}
+
+.imagem-de-fundo {
+    width: 100%; /* Define a largura da imagem de fundo */
+    height: auto; /* Permite que a altura seja ajustada automaticamente para manter a proporção */
+    display: block; /* Remove espaços extras em torno da imagem */
+}
+
+.logo {
+    position: absolute; /* Define a posição absoluta para a imagem da logo */
+    top: 50%; /* Ajuste a posição verticalmente no centro */
+    left: 50%; /* Ajuste a posição horizontalmente no centro */
+    transform: translate(-50%, -50%); /* Centralize a logo no centro do container */
+    width: 20%; /* Define a largura da imagem da logo como uma porcentagem do container */
+    height: auto; /* Permite que a altura seja ajustada automaticamente para manter a proporção */
+    z-index: 1; /* Define a ordem de empilhamento (maior valor fica em cima) */
+}
+
+/*fim de colocando logo*/
+
+.exemplo10{
+    width: 300px;
+    height: 400px;
+    background-image: url('../img/flores02.jpeg');
+    background-size: 120px; /* Redimensione a imagem para cobrir */
+    border: 1px solid red;
+    background-repeat: repeat-x;/*impede a repetição da imagem no eixo y só vai se reptir no eixo x*/
+
+}
+
+.exemplo11{
+    width: 300px;
+    height: 400px;
+    background-image: url('../img/flores02.jpeg');
+    background-size: 120px; /* Redimensione a imagem para cobrir */
+    border: 1px solid red;
+    background-repeat: repeat-y;/*impede a repetição da imagem no eixo x só vai se reptir no eixo y*/
+    background-repeat: space; /*espaços entre as imagens*/
+}
+
+.exemplo12{
+    width: 300px;
+    height: 400px;
+    background-image: url('../img/flores02.jpeg');
+    background-size: 120px; /* Redimensione a imagem para cobrir */
+    border: 3px solid green;
+    background-repeat: round; /*imagem se repete por igual sem ser cortada*/
+   
+}
+
+.exemplo13{
+    width: 300px;
+    height: 400px;
+    background-image: url('../img/flores02.jpeg');
+    background-size: 120px; /* Redimensione a imagem para cobrir */
+    border: 3px solid yellow;
+    background-repeat: no-repeat;/*A imagem não vai se reptir dentro da div */
+}
+
+h1 {
+  
+    color: blue;
+}
+
+h3{
+    font-size: 34px; /* Tamanho da fonte desejado, você pode ajustar o valor conforme necessário */
+    color: azure;
+}
