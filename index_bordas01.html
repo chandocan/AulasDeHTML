@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+</head>
+<style>
+
+    body {
+        font-family: Roboto, sans-serif;
+    }
+
+    .exemplo {
+        background-color: palevioletred;
+        width: 200px;
+        height: 200px;
+        border-style:dotted; /*criar a linha as bordas tem varios estilos double duas linhas, dotter cria varias bolinhas em volta. solid da para aplicar uma borda mista com varios estilos aomesmo tempo*/
+        border-width: 5px;/*tem configurações pre definidas posso usar em sequência 10px 20px 30px 40px*/
+
+    }
+
+
+    .exemplo02 {
+        background-color: orange;
+        width: 200px;
+        height: 200px;
+        border-style:double; /*criar a linha as bordas tem varios estilos double duas linhas, dotter cria varias bolinhas em volta. solid da para aplicar uma borda mista com varios estilos aomesmo tempo*/
+        border-width: 9px;/*tem configurações pre definidas posso usar em sequência 10px 20px 30px 40px*/
+        border-color: purple greenyellow coral;
+        border-radius: 50px/100px;
+
+    }
+
+    .exemplo03 {
+        background-color: orange;
+        width: 200px;
+        height: 200px;
+        border-style:solid; /*criar a linha as bordas tem varios estilos double duas linhas, dotter cria varias bolinhas em volta. solid da para aplicar uma borda mista com varios estilos aomesmo tempo*/
+        border-width: 7px;/*tem configurações pre definidas posso usar em sequência 10px 20px 30px 40px*/
+        border-color: purple greenyellow coral;
+
+    }
+
+    .exemplo04 {
+        background-color: orange;
+        width: 200px;
+        height: 200px;
+        border-style:double; /*criar a linha as bordas tem varios estilos double duas linhas, dotter cria varias bolinhas em volta. solid da para aplicar uma borda mista com varios estilos aomesmo tempo*/
+        border-width: 9px;/*tem configurações pre definidas posso usar em sequência 10px 20px 30px 40px*/
+        border-color: purple greenyellow coral blue;
+        border-radius: 50%;
+
+    }
+
+    .exemplo05 {
+        background-color: black;
+        width: 200px;
+        height: 200px;
+        /*definindo uma borda*/
+        border: 30px solid;
+    }
+
+    #exemplo-5{
+        /*para essa propriedade funcionar tem que obrigatoriamente aplicar uma borda*/
+        border-image-source: url('..//images/florSemAlfa.png'); /*coloca o caminho da imagem*/
+
+    }
+
+
+
+    .exemplo06 {
+        background-color: black;
+        width: 200px;
+        height: 200px;
+        /*definir bordas*/
+        border: 30px solid;
+    }
+
+    #exemplo-6{
+        border-image-source: linear-gradient(red,blue);
+    }
+
+    .exemplo07 {
+        background-color: black;
+        width: 200px;
+        height: 200px;
+        /*definir bordas*/
+        border: 30px solid;
+  
+
+    }
+
+    #exemplo-7{
+        border-image-source: url('../images/estrelas.png'); /*coloca o caminho da imagem*/
+        border-image-repeat: repeat; /*pode usar round para rdimencionar é caber a imagem de forma correta*/
+        border-image-slice: 164 fill;   
+        /*posso usar imagens com varias larguras*/
+        /*border-image-width: 10px 20px 30px;  */
+        
+    }
+
+    .exemplo08{
+        width: 200px;
+        height: 200px;
+        background-color: black; 
+        border: 30px solid; /*as bordas so aparecem se colocar solid*/  
+
+    }
+
+    #exemplo-8{
+        border-image-source: linear-gradient(red,blue);
+        border-image-slice: 10;
+    }
+ 
+
+    /*poderia ter tirado a camada de trás na imagem a camada alfa  o fundo para ficar só as estrelas*/
+    .exemplo09{
+        width: 200px;
+        height: 200px;
+        background-color: black; 
+        border: 30px solid; /*as bordas so aparecem se colocar solid*/  
+        margin: 50px auto;
+
+    }
+
+    #exemplo-9{
+        border-image-source: url('../images/estrelas.png'); /*coloca o caminho da imagem*/
+        border-image-repeat: round;
+        border-image-slice: 160;
+        border-image-outset: 50px; /*faz um afastamento do elemento*/
+    }
+
+    /*resumo de tudo acima*/
+    .exemplo10{
+        width: 200px;
+        height: 200px;
+        background-color: black; 
+        border: 30px solid; /*as bordas so aparecem se colocar solid*/  
+        margin: 50px auto;
+
+    }
+
+    /*resumindo tudo lá em cima de uma forma simples*/
+    #exemplo-10{
+        border-image: url('../images/estrelas.png') 164/10px/1 round; /*coloca o caminho da imagem o slice depois o tipo de repetição para achar uma largura você divide pela largura que quiser no caso dividiu o slice por 10px que é a largura que você desejou nesse casp 10px  foi colocado um autset de 1*/
+       
+    }
+
+</style>
+
+<body>
+
+    <h1>Bordas</h1>    
+    <p>podemos definir configurações de nossas bordas</p>
+
+    <ul>
+        <li>border-width</li>
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+
+    <h2>Exemplo</h2>
+    <div id="exemplo-1" class="exemplo">
+
+    </div>
+    <br>
+    <div id="exemplo-2" class="exemplo02">
+
+    </div>
+    <br>
+    <div id="exemplo-3" class="exemplo03">
+
+    </div>
+    <br>
+    <div id="exemplo-4" class="exemplo04">
+
+    </div>
+
+    <!--Usando imagens como bordas-->
+    <h2>Bordas com Imagens</h2>
+
+    <ul>
+        <li>bordas-image-source</li>
+        <li>border-image-width</li>
+        <li>border-image-repeat</li>
+        <li>border-image-outset</li>
+        <li>border-image-slice</li>
+    </ul>
+
+    <h3>Exemplo:</h3>
+    <div id="exemplo-5" class="exemplo05">
+
+    </div>
+    <br>
+    <div id="exemplo-6" class="exemplo06">
+        
+    </div>
+
+    <!--bordas imagem slice-->
+   
+    <h4>Exemplo slice</h4>
+    <p>O teste slice</p>
+    <div id="exemplo-7" class="exemplo07">
+
+    </div>
+    <br>
+    <p> usando com corres em vez de imagens</p>
+    <div id="exemplo-8" class="exemplo08">
+        
+    </div>
+    <br>
+    <p> usando imagens parte 02</p>
+    <div id="exemplo-9" class="exemplo09">
+        
+    </div>
+    <br>
+    <p>exemplo resumido</p>
+    <p> usando todas as propriedades</p>
+    <div id="exemplo-10" class="exemplo10">
+        
+    </div>
+
+</body>
+</html>
