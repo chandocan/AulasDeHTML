@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UsandoFontes</title>
+
+    <!--importando font-->
+   <!-- <link rel="styleheet" href="/fontes/DancingScript-VariableFont_wght.ttf"> -->
+  <style>
+    /*#style.css*/ /*para arquivos externos*/
+    /* * {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    */
+
+    @font-face {
+        font-family: Roboto; /*Esse nome é qualquer um*/
+        src: url("/fontes/Roboto/Roboto-ThinItalic.ttf");
+    }
+
+    @font-face {
+        font-family: batataDoce; /*Esse nome é qualquer um*/
+        src: url("fontes/Dancing_Script/DancingScript-VariableFont_wght.ttf");/*esse é o caminho relativo no vs code*/
+    }
+
+    @font-face {
+        font-family: batataDoce2; /*Esse nome é qualquer um*/
+        src: url("fontes/Dancing_Script/DancingScript-VariableFont_wght.ttf");/*esse é o caminho relativo no vs code*/
+        
+    }
+
+    p {
+        font-family: Roboto;
+    }
+
+    .titulo2 {
+        font-family: batataDoce;
+    }
+
+    .titulo03 {
+        font-family: batataDoce2;
+        font-weight: bold; /*algumas fontes essa propriedade não funciona*/
+        font-size:xx-large;
+        /*font-style: italic;*/
+    }
+
+  </style>
+
+</head>
+<!--As fontes estão relacionadas a tipografia ver as fontes manuscritas (handwritting)-->
+<!--google fonts-->
+
+<body>
+    <p>Estudo com fontes</p>
+    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad eius, cupiditate praesentium nesciunt ullam qui quisquam molestias quidem? Mollitia repellendus soluta eveniet deleniti rem omnis aut obcaecati harum vitae facere.</h1>
+    <!--importando google fonte-->
+    <p>Provérbios 2.16-19: "A sabedoria também o livrará das palavras doces e mentirosas da mulher imoral, da pervertida, da mulher que abandona aquele que desde a mocidade foi seu companheiro(marido) e ignora o compromisso assumido perante Deus. Quem frequenta a casa dessa mulher põe em risco a própria vida; quem anda com ela se dirige para o reino dos mortos. Os homens que se envolvem com ela entram num caminho do qual não há volta; não conseguem voltar para o caminho da vida.</p>
+    <h2 class="titulo2">batatinha</h2>
+    <p class="titulo03">Largura da fonte exempo aqui</p>
+</body>
+</html>
