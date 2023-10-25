@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+    <style>
+        p{
+            /*text-transform: none;*/
+            /*text-transform: capitalize;*/ /*deixa a primeira letra em mausculo*/
+            text-transform: uppercase; /*todo o texto em caixa auta*/
+        }
+
+        .exemplo01 {
+            width: 370px; /*comprimento*/
+            border: 1px solid black; /*borda*/
+            background-color: lavender;
+            padding: 10px;
+            text-align: justify; /*ALIAMENTO DE TEXTO pode ser esquerda direita justificado*/
+        }
+
+        a {
+            text-decoration: none; /*tira o subliado do link*/
+        }
+        
+        h1 {
+            
+            
+            text-decoration-line: underline; /*sublinha o texto*/
+            text-decoration-style: double; /*tipo de linha nesse caso linha dupla*/
+           
+        }
+
+        .testandoRiscarLinha {
+            text-decoration-line: line-through;
+        }
+
+        .criarLinhaEmCima {
+            text-decoration-line: overline; /*linha em cima do texto*/
+        }
+
+        .paragrafo {
+            text-indent: 80px; /*serve para colocar paragrafo. Valor positivo vai para direita negativo vai para esquerda*/
+            text-transform: lowercase;
+            color: red;
+        }
+
+        /*quando tem um resteg é um seletor*/
+        #espacamento {
+            /*letter-spacing: 12px;*/ /*espaçamento entre as letras*/
+            word-spacing: 12px; /*espaçamento entre palavras*/
+        }
+
+        .exemplo02 {
+            widtH:200px;
+            text-transform: lowercase;
+            background-color: blue;
+        }
+
+        span {
+            
+            background-color: green;
+            color: white;
+            /*white-space: nowrap;/*deixa com um espaçoi em branco e ignora as quebra de linha*/
+            /*white-space: pre; /*deixa os espaços em branco da forma que você escrevel na tag*/
+            /*white-space: pre-line; /*as sequencias de espaço vão se transforma em um unico espaço*/
+            white-space: pre-wrap;
+        }
+
+        .exemplo04 {
+            width: 200px;
+            background-color: blueviolet;
+            word-wrap: break-word;/*quebra a paavra em qualquer caracter palavra exemplo aqui foi vidasaoventovidasaovento onde ela foi quebrada para caber dentro do conteiner tem*/
+        }
+
+        .exemplox {
+            text-transform: lowercase;/*texto em caixa baixa*/
+            width: 120px;
+            height: 120px;
+            background-color: chartreuse;
+        }
+
+        /*propriedade writing-mode (orientação do texto)*/
+        #exemplo-01 {
+  
+            writing-mode: horizontal-tb;
+
+        }
+
+        #exemplo-02 {
+         
+            writing-mode:vertical-rl;
+        }
+
+        #exemplo-03 {
+            writing-mode:vertical-lr;
+        }
+
+        /*propriedade text-overflow*/
+
+        .exemplox3 {
+            text-transform: lowercase;
+            background-color: chartreuse;
+            width: 120px;
+            white-space: nowrap; /*todo texto em uma unica linha*/
+
+        }
+
+        #exemplo-04 {
+  
+           overflow: clip; /*esconde o que passa por largura pre determinada*/
+        }
+
+        #exemplo-05 {
+        
+            text-overflow: ellipsis; /*faz a mesma coisa do que faz o código de cima mas add reticencias no final*/
+        }
+
+        #exemplo-06 {
+
+            text-overflow: 'ver mais >';/*esse corte de texto aqui só funciona no firefox*/
+              /*text-overflow: '----';*/
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!--A expressão code é para colocar um código em uma variavel expecifica -->
+    <h1>propriedade<code>text-transform</code></h1>
+    <p class="exemplo01">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium sed placeat voluptatem dolorem voluptate iure animi nam. Earum vel voluptate tempore voluptatem? Cum earum perferendis, excepturi rem iste quo in?
+    </p>
+
+    <p>
+        É Responsável por definir quais caracteres 
+        vão estar em Maiúsculo, minúsculo, etc. 
+    </p>
+    <h2>Propriedade de decoração de texto</h2>
+    <p>
+        <ul>
+            <li><code>text-decoration-line</code></li>
+            <li><code>text-decoration-style</code></li>
+            <li><code>text-decoration-color</code></li>
+            <li><code>text-decoration-thisckenss</code></li>
+        </ul>
+    </p>
+    <a href="#">Link de Exemplo</a>
+
+    <p class="testandoRiscarLinha"> estou riscando de proposito</p>
+
+    <p class="criarLinhaEmCima">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure rem facilis deleniti distinctio, assumenda nam maxime delectus voluptatibus quaerat eum debitis minima modi, sint sequi libero a, ad amet veritatis?</p>
+
+    <p class="paragrafo">esse texto aqui é para testa o pargrafo isto é um tipo de indentação no p do html</p>
+
+    <p id="espacamento">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur doloribus recusandae repellendus quidem, dolorem maiores corporis tempore veniam, odio perspiciatis, labore tempora ducimus quaerat fugiat et nobis! Necessitatibus, quod architecto!</p>
+    
+    <P class="exemplo02">
+        <span>
+            Provérbios 2.16-19: "A sabedoria      n;            também o livrará das palavras doces e mentirosas da mulher imoral, da pervertida, da mulher que abandona aquele que desde a mocidade foi seu           companheiro(marido) e ignora o compromisso assumido perante Deus. Quem frequenta a casa dessa mulher põe em risco a própria vida; quem anda com ela se dirige para o reino dos mortos. Os homens que se envolvem com ela entram num caminho do qual não há volta; não conseguem voltar para o caminho da vida.
+        </span>
+    </P>
+
+    <!--qubra palavra para caber em um linha ou espaço-->
+    <p class="exemplo04">
+        amor verdadeiro sem palavaras que Deus abençoe todo esse amor vidasaoventovidasaovento
+    </p>
+    <!--Orientação do texto esquerda , direita cima baixo. alguns idiomas são lidos da esquerda para direita isto é verticalmente como orientais -->
+    <code>writing-mode: horizontal-tb;</code>
+    <p id="exemplo-01" class="exemplox">
+        chega de saudade
+        A realidade que sem Deus não a paz
+    </p>
+    
+    <code>writing-mode: vertical-rl;</code>
+    <p id="exemplo-02" class="exemplox">
+        chega de saudade
+        A realidade que sem Deus não a paz
+    </p>
+
+    <code>writing-mode: vertical-rl;</code>
+    <p id="exemplo-03" class="exemplox">
+        chega de saudade
+        A realidade que sem Deus não a paz
+    </p>
+    <h3>Propriedade text-overflow</h3>
+    <!--propriedade para esconder o texto que passa da linha que você determina-->
+    <!--serve para mostra para o usuário que tem mais coisa que ele consegue ler basta coloca ... para indetificar isso-->
+    <code>text-overflow:clip;</code>
+    <p id="exemplo-04" class="exemplox3">
+        chega de saudade
+        A realidade que sem Deus não a paz
+    </p>
+    
+    <code>text-overflow:ellipsis;</code>
+    <p id="exemplo-05" class="exemplox3" >
+       
+        <!-- obs o código esta errado no css pois esta sobregacerregado por outros-->
+        <!--fiz um código mostrando como fica sobrescrevendo pela tag com style-->
+        A realidade que sem Deus não a paz. OBS MINHA NOTA AQUI
+    </p>
+
+    <p class="exemplox3" style="text-overflow:ellipsis; white-space: nowrap; overflow: hidden; width: 200px;">
+        A realidade que sem Deus não a paz. OBS MINHA NOTA AQUI
+      </p>
+
+      <code>text-overflow:string;</code>
+      <p id="exemplo-06" class="exemplox3">
+          chega de saudade
+          A realidade que sem Deus não a paz
+      </p>
+      
+</body>
+
+</html>
