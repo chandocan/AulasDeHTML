@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS sobras dos elementos</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border: 10px solid #8f382e;
+            margin: 20px auto;
+            background: chocolate;
+            /*define as propriedades de sobras na horizontal e na vertical*/
+
+            box-shadow: 10px 10px; /*sobras horizontal e vertical*/
+        }
+
+        .exemplo02 {
+            width: 200px;
+            height: 200px;
+            border: 10px solid #8f382e;
+            margin: 20px auto;
+            background: chocolate;
+            /*define as propriedades de sobras na horizontal e na vertical*/
+
+            box-shadow: 30px 30px red; /*sobras horizontal e vertical se colocar um teceiro valor vai ficar desfocado*/
+
+            /* da para colocar um sobra com 'insert' junto da outra exemplo 10px 10px 10px red, 20px, 20px, 10px black;*/
+
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            border: 10px solid #8f382e;
+            margin: 20px auto;
+            background: chocolate;
+            /*define as propriedades de sobras na horizontal e na vertical*/
+
+            box-shadow: 30px 30px red; /*sobras horizontal e vertical se colocar um teceiro valor vai ficar desfocado*/
+
+            /* da para colocar um sobra com 'insert' junto da outra exemplo 10px 10px 10px red, 20px, 20px, 10px black;*/
+
+            /*você pode colocar as imagem dentro das bodas é redimensionar as bordas para poder a imagem se encachar de forma adequada*/
+
+            /*filter: drop-shadow(10px 10px 5px gray); para colocar sobras dentro da imagem drop-shadow ela vai circular a imagem que não tenha fundo isso é imagem com camanda alfa*/
+
+        }
+
+        h2{
+            color: deeppink;
+            font-size: 40px;
+            text-align: center;
+            text-shadow: 10px 10px 10px; /* 5px para da uma sobra um tom mais suave*/
+            box-shadow: 10px 10px 10px;
+            filter: drop-shadow(-10px 10px 10px red)
+        }
+
+        .exemplo03 {
+            background-color: purple;
+            border: 5px solid orange;
+            color:blue;
+            padding: 20px;
+            opacity:0.5; /*50% de opacidade*/
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>
+        Propriedade <code>box-shadow</code>
+    </h1>
+
+    <div>
+
+    </div>
+
+    <div class="exemplo02"></div>
+
+    <img src="image/Juquete_soldie.png">
+
+    <h2>Bem-vido(a) á Trilha de CSS na DIO!</h2>
+
+    <div class="exemplo03">
+        <img src="image/rosa.png">
+    </div>
+
+</body>
+
+</html>
