@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha CSS</title>
+
+
+   
+
+</head>
+
+<style>
+
+    /*resetando para que o site seja compativel com todos os navegadores*/
+    * {
+        padding: 0;
+        margin:0;
+        vertical-align: baseline;
+        list-style: none;
+        border: 0;
+    }
+
+
+
+    .exemplo{
+        background-color: purple;
+        /*background-color: rgb(0,0,0-5);*/ /*da para usar esse canal alfa para trabalhar com opacidade*/
+        border: 5px solid orange;
+        color: white;
+        padding:20px;
+        opacity: 0.5; /*50% de opacidade*/
+    }
+
+    .exemplo img {
+        width: 100px; /*tamanho da imagem*/
+    }
+
+    .quadrado {
+        background-color: chocolate;
+        width: 200px;
+        height: 200px;
+        overflow: visible; /*texto continua visivel*/
+
+    }
+
+    .quadrado02 {
+        background-color: chocolate;
+        width: 200px;
+        height: 200px;
+        overflow: hidden; /*texto cortado mas vai ficar invisivel hidden significa ocultar*/
+
+
+
+    }
+
+    .quadrado03 {
+        background-color: chocolate;
+        width: 200px;
+        height: 200px;
+        overflow: scroll; /*vai criar um scroll para o texto*/
+
+    }
+
+    .quadrado04 {
+        background-color: rgb(95, 214, 15);
+        width: 200px;
+        height: 200px;
+        overflow: auto; /*vai criar um scroll só se o texto precisar*/
+
+    }
+
+</style>
+<body>
+    <h1>
+        Propriedade <code>opacity</code>
+    </h1>
+    <p>Define o nivel de opacidade(transparência) de um elemento.</p>
+    <i>Exemplo</i> <br><br><br>
+
+    <div class="exemplo">
+        <img src="https://scontent.frec42-1.fna.fbcdn.net/v/t1.6435-9/85032771_2755240624558101_1070137753733169152_n.jpg?stp=dst-jpg_p960x960&_nc_cat=108&ccb=1-7&_nc_sid=300f58&_nc_ohc=ns12Pu7kCcYAX-jTanV&_nc_ht=scontent.frec42-1.fna&oh=00_AfDTCmnSIgoHdkrKo9XTRwpVKdyXMDzgKD7ldr3pabEZtQ&oe=65672284" alt="" id="contain" width="100" height="100">
+    </div>
+
+    <h2>
+        Propriedade overflow <code>overflow</code>
+    </h2>
+    <p>Controla como o contúdo deve ser exibido caso ultrapasse os limites do container.</p>
+    <i>Exemplo:</i>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br>
+    <i>overflow: visible</i>
+
+    <div class="quadrado">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate debitis ad tempora exercitationem dolor! Distinctio deleniti optio, aperiam error quasi, eum inventore et esse consectetur eius nisi hic dolor maiores.<b></b>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate debitis ad tempora exercitationem dolor! Distinctio deleniti optio, aperiam error quasi, eum inventore et esse consectetur eius nisi hic dolor maiores.
+        </p>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <i>overflow: hidder</i>
+    <br><br>
+    <div class="quadrado02">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate debitis ad tempora exercitationem dolor! Distinctio deleniti optio, aperiam error quasi, eum inventore et esse consectetur eius nisi hic dolor maiores.<b></b>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate debitis ad tempora exercitationem dolor! Distinctio deleniti optio, aperiam error quasi, eum inventore et esse consectetur eius nisi hic dolor maiores.
+        </p>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <i>overflow: scroll</i>
+    <br><br>
+    <div class="quadrado03">
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate debitis ad tempora exercitationem dolor! Distinctio deleniti optio, aperiam error quasi, eum inventore et esse consectetur eius nisi hic dolor maiores.<b></b>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate debitis ad tempora exercitationem dolor! Distinctio deleniti optio, aperiam error quasi, eum inventore et esse consectetur eius nisi hic dolor maiores.
+        </p>
+
+    </div>
+    
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <i>overflow: auto</i>
+    <br><br>
+    <div class="quadrado04">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate debitis ad tempora exercitationem dolor! Distinctio deleniti optio, aperiam error quasi, eum inventore et esse consectetur eius nisi hic dolor maiores.<b></b>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate debitis ad tempora exercitationem dolor! Distinctio deleniti optio, aperiam error quasi, eum inventore et esse consectetur eius nisi hic dolor maiores.
+        </p>
+    </div>
+
+</body>
+
+</html>
